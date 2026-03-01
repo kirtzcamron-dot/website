@@ -1,42 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Wrestling Phenoms</title>
-        <!-- Link to the stylesheet in the css/ folder -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <main class="container">
-            <header>
-                <h1>Wrestling Phenoms</h1>
-                <p class="tagline">A page about some of the greatest and up-and-coming wrestlers.</p>
-                <p class="quick-links">
-                    <a href="https://kirtzcamron-dot.github.io/website" target="_blank" rel="noopener">View on GitHub Pages</a>
-                    ·
-                    <a href="page2.html">Read more (Page 2)</a>
-                </p>
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Wrestling Phenoms</title>
 
-            <section aria-labelledby="olympic-title">
-                <h2 id="olympic-title">Unstoppable Olympic Champions</h2>
-                <p>Here's a list of five of the most renowned Olympic wrestlers of all time:</p>
-                <ul>
-                    <li>Mijaín López</li>
-                    <li>Aleksandr Karelin</li>
-                    <li>Buvaisar Saitiev</li>
-                    <li>Aleksandr Medved</li>
-                    <li>Dan Gable</li>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container py-5">
+
+    <!-- Title Section -->
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold">Wrestling Phenoms</h1>
+        <p class="lead">
+            This page is about some of the greatest wrestlers to walk this planet,
+            along with the up-and-coming wrestlers to watch out for.
+        </p>
+    </div>
+
+    <!-- Olympic Champions Section -->
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2 class="mb-3">Unstoppable Olympic Champions</h2>
+
+            <div id="olympics" class="p-3 shadow-sm">
+                <p>Here’s a list of 5 of the most renowned Olympic champions of all time:</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Mijaín López</li>
+                    <li class="list-group-item">Aleksandr Karelin</li>
+                    <li class="list-group-item">Buvaisar Saitiev</li>
+                    <li class="list-group-item">Aleksandr Medved</li>
+                    <li class="list-group-item">Dan Gable</li>
                 </ul>
-            </section>
+            </div>
 
-            <figure>
-                <img src="img/Olympic championship arena.webp" alt="Olympic championship arena" style="max-width:100%;height:auto;" />
-                <figcaption>Olympic wrestling arena</figcaption>
-            </figure>
+            <a href="https://www.nbcolympics.com/news/wrestling-101-olympic-rules-and-regulations"
+            class="btn btn-primary mt-3">
+            What is Olympic Wrestling?
+            </a>
+        </div>
 
-            <p class="link">Learn more: <a href="https://www.nbcolympics.com/news/wrestling-101-olympic-rules-and-regulations" target="_blank" rel="noopener">What is Olympic wrestling?</a></p>
-        </main>
-    </body>
+        <div class="col-md-6 text-center">
+            <img src="img/Olympic championship arena.webp"
+                alt="Olympic championship arena"
+                class="img-fluid rounded shadow mt-3">
+        </div>
+    </div>
+
+    <!-- Navigation Button -->
+    <div class="text-center mt-5">
+        <a href="page2.html" class="btn btn-dark btn-lg">Read More on Page 2</a>
+    </div>
+
+</div>
+
+</body>
 </html>
